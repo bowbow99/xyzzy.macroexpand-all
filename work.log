@@ -1,4 +1,15 @@
-2009-07-22 15:25:57 1�ڂ� operand �͂��̂܂ܕԂ� special operators
+2009-07-22 15:33:17 lambda
+* すっかり忘れてたが、lambda の args も無視しなきゃダメだ
+
+2009-07-22 15:31:11 let タイプの special form
+* 1つ目の operand が (name ...) の list
+  - macrolet
+  - let
+  - let*
+  - labels
+  - flet
+
+2009-07-22 15:25:57 1つ目の operand はそのまま返す special operators
 - quote
 - function
 - eval-when
@@ -24,7 +35,7 @@
 - flet
 
 2009-07-22 14:57:40 started investigate special forms
-* ���Ԃ�]������Ȃ�������������邾���ł���
+* たぶん評価されない部分を回避するだけでおｋ
 
 
 

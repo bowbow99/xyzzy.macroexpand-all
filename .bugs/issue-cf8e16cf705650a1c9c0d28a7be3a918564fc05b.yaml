@@ -7,8 +7,8 @@ type: :bugfix
 component: macroexpand-all
 release: "0.01"
 reporter: bowbow99 <bowbow99@gmail.com>
-status: :in_progress
-disposition: 
+status: :closed
+disposition: :reorg
 creation_time: 2009-07-22 05:49:24.458500 Z
 references: []
 
@@ -22,3 +22,7 @@ log_events:
   - bowbow99 <bowbow99@gmail.com>
   - changed status from unstarted to in_progress
   - ""
+- - 2009-07-22 06:41:45.663250 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - closed with disposition reorg
+  - investigation done. splitted into each type of special forms.

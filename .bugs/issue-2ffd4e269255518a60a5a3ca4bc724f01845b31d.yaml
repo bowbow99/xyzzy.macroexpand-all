@@ -1,0 +1,32 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: lambda
+desc: ignore args
+type: :bugfix
+component: macroexpand-all
+release: "0.01"
+reporter: bowbow99 <bowbow99@gmail.com>
+status: :closed
+disposition: :fixed
+creation_time: 2009-07-22 06:34:24.270250 Z
+references: []
+
+id: 2ffd4e269255518a60a5a3ca4bc724f01845b31d
+log_events: 
+- - 2009-07-22 06:34:25.273250 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - created
+  - ""
+- - 2009-07-22 06:42:10.694250 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - changed status from unstarted to in_progress
+  - ""
+- - 2009-07-22 06:48:40.847875 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - commented
+  - |-
+    since macroexpand-all do macroexpand first, lambda form turn into
+    (function (lambda ...)).
+- - 2009-07-22 06:48:57.008500 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - closed with disposition fixed
+  - ""
