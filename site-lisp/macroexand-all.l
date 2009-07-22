@@ -4,16 +4,11 @@
 ;;;;
 ;;;; Author: bowbow99 <bowbow99@gmail.com>
 ;;;; Created: 2009-07-22 14:40:36
-;;;; Updated: 2009-07-22 16:39:05
+;;;; Updated: 2009-07-22 16:44:57
 ;;;;
 
 (defun macroexpand-all (form)
-  (labels ((group (list n)
-             (if (<= (length list) n)
-                 (list list)
-               (cons (subseq list 0 n)
-                     (group (nthcdr n list) n))))
-           (expand-cddr (form)
+  (labels ((expand-cddr (form)
              (list* (car form) (cadr form)
                     (mapcar #'macroexpand-all (cddr form)))))
     (setq form (macroexpand form))
