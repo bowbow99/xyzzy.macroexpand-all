@@ -4,7 +4,7 @@
 ;;;;
 ;;;; Author: bowbow99 <bowbow99@gmail.com>
 ;;;; Created: 2009-07-22 14:40:36
-;;;; Updated: 2009-07-22 16:44:57
+;;;; Updated: 2009-07-22 17:19:58
 ;;;;
 
 (defun macroexpand-all (form)
@@ -15,7 +15,10 @@
     (if (atom form)
         form
       (case (car form)
-        (function (cons (car form) (expand-cddr (cadr form))))
+        (function
+         (list (car form)
+               (if (symbolp (cadr form)) (cadr form)
+                 (expand-cddr (cadr form)))))
         ((let let*)
          (list* (car form)
                 (mapcar (lambda (pair)
