@@ -4,7 +4,7 @@
 ;;;;
 ;;;; Author: bowbow99 <bowbow99@gmail.com>
 ;;;; Created: 2009-07-22 14:40:36
-;;;; Updated: 2009-07-22 15:06:32
+;;;; Updated: 2009-07-22 15:23:38
 ;;;;
 
 
@@ -17,8 +17,14 @@
 (defun macroexpand-all (form)
   (setq form (macroexpand form))
   (if (atom form) form
-    (cons (car form)
-          (mapcar #'macroexpand (cdr form)))))
+    (case (car form)
+      ((multiple-value-bind eval-when function quote)
+       (list* (car form)
+              (cadr form)
+              (mapcar #'macroexpand-all (cddr form))))
+      (t
+       (cons (car form)
+             (mapcar #'macroexpand-all (cdr form)))))))
 
 
 
