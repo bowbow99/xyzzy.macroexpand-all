@@ -1,0 +1,18 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: packaging
+desc: define package for macroexpand-all and put codes into it.
+type: :task
+component: macroexpand-all
+release: "0.01"
+reporter: bowbow99 <bowbow99@gmail.com>
+status: :unstarted
+disposition: 
+creation_time: 2009-07-22 05:46:19.441625 Z
+references: []
+
+id: 6fad13343dadc19084f5b8c8d5930c2e4dc7ea84
+log_events: 
+- - 2009-07-22 05:46:20.801625 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - created
+  - ""

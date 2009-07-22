@@ -1,0 +1,24 @@
+--- !ditz.rubyforge.org,2008-03-06/issue 
+title: special operators
+desc: |-
+  investigate about special operators which requires specific handling
+  on expantion.
+type: :bugfix
+component: macroexpand-all
+release: "0.01"
+reporter: bowbow99 <bowbow99@gmail.com>
+status: :in_progress
+disposition: 
+creation_time: 2009-07-22 05:49:24.458500 Z
+references: []
+
+id: cf8e16cf705650a1c9c0d28a7be3a918564fc05b
+log_events: 
+- - 2009-07-22 05:49:25.375500 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - created
+  - ""
+- - 2009-07-22 05:52:02.297000 Z
+  - bowbow99 <bowbow99@gmail.com>
+  - changed status from unstarted to in_progress
+  - ""
